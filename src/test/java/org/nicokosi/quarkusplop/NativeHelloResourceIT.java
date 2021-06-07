@@ -1,9 +1,9 @@
-package org.nicokosi;
+package org.nicokosi.quarkusplop;
 
 import io.quarkus.test.junit.NativeImageTest;
 
 @NativeImageTest
-public class NativeGreetingResourceIT extends GreetingResourceTest {
+public class NativeHelloResourceIT extends HelloResourceTest {
 
     // Execute the same tests but in native mode.
 }

@@ -1,4 +1,4 @@
-package org.nicokosi.logging.json;
+package org.nicokosi.quarkusplop;
 
 import org.jboss.logging.Logger;
 

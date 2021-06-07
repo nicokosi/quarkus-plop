@@ -1,4 +1,4 @@
-package org.nicokosi.resteasyjackson;
+package org.nicokosi.quarkusplop;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -9,11 +9,11 @@ import java.util.Set;
 @Path("/quarks")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class JacksonResource {
+public class QuarksResource {
 
     private final Set<Quark> quarks = Collections.newSetFromMap(Collections.synchronizedMap(new LinkedHashMap<>()));
 
-    public JacksonResource() {
+    public QuarksResource() {
         quarks.add(new Quark("Up", "The up quark or u quark (symbol: u) is the lightest of all quarks, a type of elementary particle, and a major constituent of matter."));
         quarks.add(new Quark("Strange", "The strange quark or s quark (from its symbol, s) is the third lightest of all quarks, a type of elementary particle."));
         quarks.add(new Quark("Charm", "The charm quark, charmed quark or c quark (from its symbol, c) is the third most massive of all quarks, a type of elementary particle."));
